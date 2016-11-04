@@ -7,7 +7,7 @@ A doctrine migrations provider for Silex.
 Install the provider through Composer:
 
 ```bash
-composer require kurl/silex-doctrine-migrations-provider
+composer require rodrigonull/silex-doctrine-migrations-provider
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ Add the provider with your config...
 $console = new \Symfony\Component\Console\Application();
 
 $app->register(
-    new \Kurl\Silex\Provider\DoctrineMigrationsProvider($console), 
+    new \Null\Silex\Provider\DoctrineMigrationsProvider($console), 
     array(
         'migrations.directory'  => __DIR__ . '/../path/to/migrations',
         'migrations.name'       => 'Acme Migrations',
