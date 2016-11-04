@@ -18,7 +18,7 @@ use Pimple\ServiceProviderInterface;
 use Silex\Application;
 use Silex\Api\BootableProviderInterface;
 use Symfony\Component\Console\Application as Console;
-use Symfony\Component\Console\Helper\DialogHelper;
+use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
@@ -85,7 +85,7 @@ class DoctrineMigrationsProvider implements
     {
         $helperSet = new HelperSet([
             'connection' => new ConnectionHelper($app['db']),
-            'dialog'     => new DialogHelper(),
+            'dialog'     => new QuestionHelper(),
         ]);
 
         if (isset($app['orm.em'])) {
