@@ -1,13 +1,13 @@
 {
-    "name": "kurl/silex-doctrine-migrations-provider",
+    "name": "rodrigonull/silex-doctrine-migrations-provider",
     "description": "A doctrine migrations provider for silex",
     "license": "MIT",
     "type": "library",
     "require": {
-        "php": "^5.5|^7",
+        "php": "^5.4|^7",
         "doctrine/dbal": "^2.2",
         "doctrine/migrations": "^1.0",
-        "silex/silex": "^2.0",
+        "silex/silex": "^1.3",
         "symfony/console": "^2.3 | ^3.0"
     },
     "require-dev": {
@@ -15,10 +15,10 @@
         "phpunit/phpunit": "^3.7"
     },
     "autoload": {
-        "psr-4": { "Kurl\\Silex\\Provider\\": "src/" }
+        "psr-4": { "Null\\Silex\\Provider\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Kurl\\Silex\\Provider\\Tests\\": "tests/" }
+        "psr-4": { "Null\\Silex\\Provider\\Tests\\": "tests/" }
     },
     "config": {
         "bin-dir": "bin"
