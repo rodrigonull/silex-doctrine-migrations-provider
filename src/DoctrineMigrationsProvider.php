@@ -6,7 +6,7 @@
  * @created 15/12/14 10:12
  */
 
-namespace Kurl\Silex\Provider;
+namespace Null\Silex\Provider;
 
 use Doctrine\DBAL\Migrations\Configuration\Configuration;
 use Doctrine\DBAL\Migrations\OutputWriter;
